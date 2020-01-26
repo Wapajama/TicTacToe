@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=HumanTicPlayer
+comment0.text=\n\ A\ user\ that\ can\ decide\ and\ execute\ moves.\n\n\ @author\ Jordan\ Chin\n\ @version\ 1.0\n
+comment1.params=
+comment1.target=HumanTicPlayer()
+comment1.text=\n\ Creates\ the\ mark\ for\ the\ human\ TicTacToe\ player.\n
+comment2.params=game\ move
+comment2.target=void\ movePick(TicGame,\ TicMove)
+comment2.text=\n\ Makes\ move\ on\ game\ board\ after\ user\ decides\ pick.\n\n\ @param\ game\ the\ TicTacToe\ game\ board\ currently\ in\ use.\n
+comment3.params=move
+comment3.target=boolean\ isPosInvalid(TicMove)
+comment3.text=\n\ Checks\ to\ see\ if\ the\ position\ chosen\ by\ user\ is\ invalid.\n\ @return\ true\ if\ the\ position\ is\ empty\ or\ its\ length\ is\ invalid,\ and\n\ that\ it\ is\ not\ "QUIT";\ false\ otherwise.\n
+comment4.params=move
+comment4.target=void\ getPos(TicMove)
+comment4.text=\n\ Receives\ user\ input\ and\ repeats\ if\ input\ is\ invalid.\n
+numComments=5

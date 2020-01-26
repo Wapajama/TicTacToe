@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=ATicPlayer
+comment0.text=\n\ A\ generic\ TicTacToe\ player\ that\ makes\ moves\ in\ the\ game.\n\n\ @author\ Jordan\ Chin\n\ @version\ 1.0\n
+comment1.params=
+comment1.target=ATicPlayer()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ ATicPlayer\n
+comment2.params=game\ move
+comment2.target=void\ movePick(TicGame,\ TicMove)
+comment2.text=\n\ Makes\ move\ on\ game\ board\ after\ user\ decides\ pick.\n\n\ @param\ game\ the\ TicTacToe\ game\ board\ currently\ in\ use.\n
+comment3.params=move
+comment3.target=void\ getPos(TicMove)
+comment3.text=\n\ Receives\ user\ input.\n
+comment4.params=game\ move
+comment4.target=boolean\ isPosLegal(TicGame,\ TicMove)
+comment4.text=\n\ Checks\ if\ a\ position\ to\ be\ made\ is\ legal.\n\ @param\ game\ the\ TicTacToe\ game\ board\ currently\ in\ use.\n\ @return\ true\ if\ the\ element\ of\ an\ array\ is\ empty\ (a\ space)\ when\ a\n\ position\ is\ called;\ false\ otherwise.\n
+comment5.params=game\ move
+comment5.target=void\ illegalToLegalMove(TicGame,\ TicMove)
+comment5.text=\n\ Prints\ an\ error\ message\ and\ instructs\ player\ to\ make\ and\ execute\n\ another\ move.\n
+comment6.params=game\ move
+comment6.target=void\ makeMove(TicGame,\ TicMove)
+comment6.text=\n\ Executes\ move\ chosen\ by\ player.\ Catches\ an\n\ ArrayIndexOutOfBoundsException\ if\ move\ is\ illegal.\ Iterates\ until\n\ legal\ move\ is\ chosen.\n\ @param\ game\ the\ TicTacToe\ game\ board\ currently\ in\ use.\n
+numComments=7

@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=CpuTicPlayer
+comment0.text=\n\ A\ computer\ player\ that\ choses\ moves\ randomly.\n\n\ @author\ Jordan\ Chin\n\ @version\ 1.0\n
+comment1.params=size
+comment1.target=CpuTicPlayer(int)
+comment1.text=\n\ Creates\ the\ mark\ for\ the\ CPU\ TicTacToe\ player.\n
+comment2.params=game\ move
+comment2.target=void\ oldMovePick(TicGame,\ TicMove)
+comment2.text=\n\ Decides\ moves\ for\ computer\ randomly.\n\ @game\ the\ TicTacToe\ game\ board\ currently\ in\ use.\n
+comment3.params=a\ i
+comment3.target=boolean\ contains(int[],\ int)
+comment4.params=a\ i
+comment4.target=int\ freq(int[],\ int)
+comment5.params=game\ human\ type\ i\ j
+comment5.target=void\ pointAssign(TicGame,\ HumanTicPlayer,\ char,\ int,\ int)
+comment6.params=game\ i\ type
+comment6.target=void\ pointAllocate(TicGame,\ int,\ char)
+comment7.params=game\ human\ type
+comment7.target=void\ rowOrColumnCheck(TicGame,\ HumanTicPlayer,\ char)
+comment8.params=game\ human\ type
+comment8.target=void\ diagonalCheck(TicGame,\ HumanTicPlayer,\ char)
+comment9.params=game\ move
+comment9.target=void\ movePick(TicGame,\ TicMove)
+comment9.text=\n\ Assigns\ points\ from\ each\ filled\ element\ in\ array\ and\ fills\ element\ that\n\ is\ empty.\n\ @param\ game\ the\ TicTacToe\ game\ board\ currently\ in\ use.\n
+numComments=10

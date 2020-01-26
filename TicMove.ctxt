@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=TicMove
+comment0.text=\n\ Governs\ how\ moves\ are\ made\ in\ TicTacToe\ game.\ Allows\ for\ a\ position\n\ (row\ and\ column)\ to\ be\ called\ under\ one\ class.\n\n\ @author\ Jordan\ Chin\n\ @version\ 1.0\n
+comment1.params=
+comment1.target=TicMove()
+comment1.text=\n\ Initializes\ the\ indices\ of\ the\ array\ to\ 0.\n
+comment2.params=game\ a
+comment2.target=void\ rowConvert(TicGame,\ ATicPlayer)
+comment2.text=\n\ Converts\ part\ of\ the\ positon\ into\ the\ row.\ Catches\ a\n\ StringIndexOutOfBoundsException\ if\ there\ is\ no\ input.\n\n\ @param\ \ game\ the\ TicTacToe\ game\ board\ currently\ in\ use.\n\ @param\ a\ a\ generic\ TicTacToe\ player.\n
+comment3.params=game\ a
+comment3.target=void\ colConvert(TicGame,\ ATicPlayer)
+comment3.text=\n\ Converts\ part\ of\ the\ positon\ into\ the\ column.\ Catches\ a\n\ StringIndexOutOfBoundsException\ if\ there\ is\ no\ input.\n\n\ @param\ \ game\ the\ TicTacToe\ game\ board\ currently\ in\ use.\n\ @param\ a\ a\ generic\ TicTacToe\ player.\n
+numComments=4

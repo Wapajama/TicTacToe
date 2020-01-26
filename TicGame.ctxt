@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=TicGame
+comment0.text=\n\ Where\ the\ TicTacToe\ game\ is\ created,\ modified\ and\ checked\ when\ it\n\ is\ finished.\ Also\ where\ the\ main\ method\ is\ located.\n\ @author\ Jordan\ Chin\n\ @version\ 1.0\n
+comment1.params=s
+comment1.target=TicGame(int)
+comment1.text=\n\ Creates\ a\ TicTacToe\ game\ of\ an\ inputed\ size.\n\ \n\ @param\ s\ the\ size\ of\ the\ game\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\n\ A\ string\ representation\ of\ the\ TicTacToe\ game.\n\n\ @return\ The\ full\ TicTacToe\ board.\n
+comment3.params=
+comment3.target=void\ invalidBoardSize()
+comment3.text=\n\ Creates\ error\ messages\ for\ invalid\ board\ sizes\ and\ prints\ them\ to\ the\n\ screen.\n
+comment4.params=i\ j
+comment4.target=boolean\ isPosFull(int,\ int)
+comment4.text=\n\ Checks\ if\ the\ element\ in\ an\ array\ does\ not\ have\ a\ space.\n\ @param\ i\ the\ first\ index\ in\ the\ array.\n\ @param\ j\ the\ second\ index\ in\ the\ array.\n\ @return\ true\ if\ the\ element\ is\ occupied\ by\ a\ player;\ false\ otherwise.\n
+comment5.params=h
+comment5.target=boolean\ isGameOver(HumanTicPlayer)
+comment5.text=\n\ Checks\ to\ see\ if\ the\ game\ is\ over.\n\ @return\ true\ if\ a\ player\ won\ or\ if\ there\ is\ a\ tie.\n
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+comment6.text=\n\ Runs\ the\ entire\ game.\ Controls\ the\ user\ input\ and\ the\ seqences\ within\n\ the\ game.\n\ @param\ args\n
+numComments=7
