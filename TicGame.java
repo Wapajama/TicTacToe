@@ -89,7 +89,8 @@ public class TicGame
      * @param j the second index in the array.
      * @return true if the element is occupied by a player; false otherwise.
      */
-    public boolean isPosFull(int i, int j){
+    public boolean isPosFull(int i, int j)
+    {
         return x[i][j] != ' ';
     }
 
