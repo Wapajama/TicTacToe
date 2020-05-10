@@ -7,22 +7,67 @@ import java.util.Scanner;
  */
 public class TicGame
 {
-    // instance variables - replace the example below with your own
-    public  char[][] x;
-    public  int size;
-    public static String error;
-    public int hWin;
-    public int tie;
-
+    private char[][] m_Grid;        // KRIS: More descriptive value names, prefix with "m_" to clarify that it's a [m]ember variable. 
+    private const int m_GridSize;   // KRIS: Making m_GridSize const so that no one can change it(and so that we know for sure that no one can, either 
+    private static String m_Error;  // intentionally or accidentaly) during the game. Setting it to const is a good  
+    private int m_HumanWins;        // idea here as >currently< we are unable to switch size during the game, however in another
+    private int m_NumberOfTies;     // implementation you could obv make it non-const. 
+// KRIS: Always make member variables private(VERY few exceptions, though there are some),
+// and only edit them using so called "Get" and "Set" functions as shown below,
+// it makes it easier to know who changes the values (e.g by setting a breakpoint in the function)
+// and you can make sure that it's always correctly accesses (note the "InsideBounds" check I added).           
+    private const char m_ErrorValue = -1;
+    
+    public char GetNode(int x, int y)
+    {
+        if( InsideBounds(x,y))
+        {
+            return m_Grid[x][y];
+        }
+        return errorValue;
+    }
+    public void SetNode(int x, int y, char value)
+    {
+        if (InsideBounds(x,y))
+        {
+            m_Grid[x][y] = value;
+        }
+        else
+        (
+            // Handle the error in any way you seem fit, e.g throw an exception
+            throw new OutOfBoundsException("DAFUQ");
+        )
+    }
+    public int GetGridSize()const { return m_GridSize;} // The trailing "const" means that the function can't change the member variables
+                                                        // i.e the code won't compile if you try to edit anything. 
+    public void HumanWins()
+    {
+        print("CONGRATS BITCH");
+        ++m_HumanWins;
+        
+        // other type of proccesing
+    }
+    public void AIWins()
+    {
+        print("HOLY SHIT U SUK");
+        
+        // ....
+    }
+    public void ItsATie()
+    {
+        print("OH FECK NO ONE WINS")
+        ++m_NumberOfTies;
+    }
+    
     /**
      * Creates a TicTacToe game of an inputed size.
      * 
      * @param s the size of the game
      */
-    public TicGame(int s)
+    // KRIS: 
+    public TicGame(int size) : m_Size(size) 
     {
         // initialise instance variables
-        size = s;
         hWin = 0;
         tie = 0;
         error = "Please enter valid move.";
